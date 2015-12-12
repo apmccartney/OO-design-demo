@@ -4,7 +4,7 @@ public class administrator {
     public administrator( String [] questions ){
 	this.questions = questions;
 	this.stats = new survey.mutableStatistics( questions.length );
-	this.respondentID = 1;
+	this.nextRespondentID = 1;
     }
     /* methods */
     public survey.instance getSurvey(){
@@ -18,5 +18,5 @@ public class administrator {
     /* fields */
     private String[] questions;
     private survey.mutableStatistics stats;
-    private int respondentID;
+    private int nextRespondentID;
 }

@@ -15,6 +15,21 @@ public class builder{
 	return new survey.administrator(questionList);
     }
 
+    public int numQuestions(){
+	return this.questions.size();
+    }
+
+    public void printQuestions(){
+	for (int i = 0; i < this.questions.size(); ++i){
+	    System.out.println( (i+1) + ". " + this.questions[i]);
+	}
+	System.out.println();
+    }
+
+    public void removeQuestion(int questionNumber){
+	this.questions.remove(questionNumber - 1);
+    }
+
     /* fields */
     private java.util.List<String> questions;
 }
