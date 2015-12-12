@@ -21,7 +21,7 @@ public class builder{
 
     public void printQuestions(){
 	for (int i = 0; i < this.questions.size(); ++i){
-	    System.out.println( (i+1) + ". " + this.questions[i]);
+	    System.out.println( (i+1) + ". " + this.questions.get(i));
 	}
 	System.out.println();
     }

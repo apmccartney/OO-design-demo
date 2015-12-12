@@ -8,7 +8,7 @@ public class administrator {
     }
     /* methods */
     public survey.instance getSurvey(){
-	return new survey.instance( questions, this.stats, this.respondentID++ );
+	return new survey.instance( questions, this.stats, this.nextRespondentID++ );
     }
 
     public survey.statistics getStats(){

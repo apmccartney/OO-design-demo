@@ -2,8 +2,22 @@ class test {
     public static void main(String[] args){
 	/* Design the survey by specifying a few questions */
 	survey.builder mySB = new survey.builder();
-	mySB.addQuestion("What 1+1?");
-	mySB.addQuestion("What 1+2?");
+	mySB.addQuestion("What is 1+1?");
+	mySB.addQuestion("What is 1+2?");
+	System.out.println( mySB.numQuestions() + " questions added so far");
+	System.out.println("Survey so far:");
+	mySB.printQuestions();
+	mySB.removeQuestion(2);
+	System.out.println("Survey after removing Question 2:");
+	mySB.printQuestions();
+	System.out.println( mySB.numQuestions() + " questions currently");
+	System.out.println();
+	mySB.addQuestion("What is 1+3?");
+	mySB.addQuestion("What is 1+4?");
+	System.out.println("Final draft survey questions:");
+	mySB.printQuestions();
+	System.out.println( mySB.numQuestions() + " questions in final draft");
+	System.out.println();
 
 	/* Once we're done adding questions, 
 	 * the builder uses the survey to make a new survey administrator 
