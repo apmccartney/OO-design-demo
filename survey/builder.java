@@ -10,7 +10,9 @@ public class builder{
     }
     
     public survey.administrator makeSurvey(){
-	return new survey.administrator(this.questions.toArray(new String[this.questions.size()]));
+	String [] questionList = this.questions.toArray(new String[this.questions.size()]);
+	this.questions = new java.util.ArrayList<String>();
+	return new survey.administrator(questionList);
     }
 
     /* fields */
