@@ -16,7 +16,7 @@ public class mutableResult implements result {
     }
 
     public int responseValue(int index){ 
-	retxourn this.responses[index]; 
+	return this.responses[index]; 
     }
 
     public void responseValue(int index, int value){
